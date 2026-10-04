@@ -1,0 +1,1 @@
+"use client"; import { Protected } from "@/components/protected"; import { JobForm } from "@/components/job-form"; export default function NewJob() { return <Protected role="employer"><div className="mx-auto max-w-2xl"><h1 className="mb-6 text-3xl font-bold">Post a job</h1><JobForm /></div></Protected>; }

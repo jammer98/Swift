@@ -1,0 +1,3 @@
+"use client";
+import { useEffect } from "react"; import { useRouter } from "next/navigation"; import { useAuth } from "./auth"; import type { Role } from "@/lib/types";
+export function Protected({ role, children }: { role?: Role; children: React.ReactNode }) { const { user, loading } = useAuth(); const router = useRouter(); useEffect(() => { if (!loading && !user) router.replace("/login"); else if (!loading && role && user?.role !== role) router.replace("/"); }, [loading, user, role, router]); if (loading || !user || (role && user.role !== role)) return <p>Checking access...</p>; return <>{children}</>; }
