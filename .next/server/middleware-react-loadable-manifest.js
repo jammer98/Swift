@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"app/page.tsx -> @/components/shader-hero\":{\"id\":\"app/page.tsx -> @/components/shader-hero\",\"files\":[\"static/chunks/_app-pages-browser_components_shader-hero_tsx.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST="{}"
