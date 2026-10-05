@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const headingFont = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-heading" });
 const bodyFont = Instrument_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
-export const metadata = { title: "Job Board", description: "Find your next opportunity" };
+export const metadata = { title: "Swift", description: "Find your next opportunity" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return <html lang="en" className={cn(headingFont.variable, bodyFont.variable)}><body><AuthProvider><Navbar /><main>{children}</main></AuthProvider></body></html>;
 }
